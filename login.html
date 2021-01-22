@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Kalam:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body style=" background-image:linear-gradient(orange,white);height:56rem;font-family : Kalam,cursive">
+    <center>
+
+        <img src="https://cdn.nohat.cc/thumb/f/720/bbfb57d996f84a3c8768.jpg" height="300"alt="">
+                <h2>
+            {{info}}
+        </h2>
+        <form action="/form_login" method="post"class="container mt-5 ">
+            <label  class="mt-1">
+                <h4>
+                    <b>  Voter ID:</b>
+                </h4>
+            </label> <br/>
+            <input class="btn btn-secondary  mt-3" name='Voter' type="text"  /> <br/>
+            <label  class="mt-4">
+              <h4>
+                   <b>Aadhar ID:</b>
+              </h4>
+            </label> <br/>
+            <input type="text" class="btn btn-secondary  mt-3" name="Aadhar" /> <br/>
+            <input class="btn btn-success mt-5" type="submit" value="Login"/>
+        </form>
+    </center>
+</body>
+</html>
