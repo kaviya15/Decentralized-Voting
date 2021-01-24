@@ -1,3 +1,4 @@
+import os
 class Create:
     def __init__(self,name,voter,aadhar):
         self.name = name
@@ -11,8 +12,16 @@ class Create:
                  "adh":self.aadhar,
             }
         )
-obj1 = Create("kaviya",987654321987,9632581470)
-obj2 = Create("ramya",876543219876,7412583690)
-obj3 = Create("jeni",765432198765,8523691470)
+base_dir = os.path.dirname(os.path.abspath(__file__))
+image_dir = os.path.join(base_dir,"images")
+names= [file.split('.')[0] for _,_,files in os.walk(image_dir) for file in files]
+arr = []
+for name in range(len(names)):
+    names[name] = Create(names[name],987456123+name,123456+name)
+    arr.append(names[name].create_dict())
+    
+    
+            
 
-arr = [obj1.create_dict(),obj2.create_dict(),obj3.create_dict()]
+
+
